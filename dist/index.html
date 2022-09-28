@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8" />
+        <title>STD Transformatör</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/std-logo-sm.png">
+
+        <!-- plugins -->
+        <link href="assets/libs/flatpickr/flatpickr.min.css" rel="stylesheet" type="text/css" />
+
+		<!-- App css -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bs-default-stylesheet" />
+		<link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="app-default-stylesheet" />
+
+		<link href="assets/css/bootstrap-dark.min.css" rel="stylesheet" type="text/css" id="bs-dark-stylesheet" disabled />
+		<link href="assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="app-dark-stylesheet"  disabled />
+
+		<!-- icons -->
+		<link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body class="loading" data-layout-mode="horizontal" data-layout='{"mode": "light", "width": "fluid", "menuPosition": "fixed", "sidebar": { "color": "light", "size": "default", "showuser": false}, "topbar": {"color": "light"}, "showRightSidebarOnPageLoad": true}'>
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Topbar Start -->
+            <div class="navbar-custom">
+                <div class="container-fluid">
+                    <ul class="list-unstyled topnav-menu float-end mb-0">
+
+                        <li class="d-none d-lg-block">
+                            <form class="app-search">
+                                <div class="app-search-box dropdown">
+                        
+                                    <div class="input-group">
+                                        <input type="search" class="form-control" placeholder="Ara..." id="top-search">
+                                        <button class="btn input-group-text" type="submit">
+                                            <i class="uil uil-search"></i>
+                                        </button>
+                                    </div>
+
+
+                                </div>
+                            </form>
+                        </li>
+    
+                        <li class="dropdown d-inline-block d-lg-none">
+                            <a class="nav-link dropdown-toggle arrow-none" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                <i data-feather="search"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-lg dropdown-menu-end p-0">
+                                <form class="p-3">
+                                    <input type="text" class="form-control" placeholder="Search ..." aria-label="search here">
+                                </form>
+                            </div>
+                        </li>
+    
+                        <li class="dropdown d-none d-lg-inline-block">
+                            <a class="nav-link dropdown-toggle arrow-none" data-toggle="fullscreen" href="#">
+                                <i data-feather="maximize"></i>
+                            </a>
+                        </li>
+    
+                       
+    
+
+            
+                        <li class="dropdown notification-list topbar-dropdown">
+                            <a class="nav-link dropdown-toggle position-relative" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                <i data-feather="bell"></i>
+                                <span class="badge bg-danger rounded-circle noti-icon-badge">6</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end dropdown-lg">
+    
+                                <!-- item-->
+                                <div class="dropdown-item noti-title">
+                                    <h5 class="m-0">
+                                        <span class="float-end">
+                                            <a href="" class="text-dark"><small>Hepsini Temizle</small></a>
+                                        </span>Bildirim
+                                    </h5>
+                                </div>
+    
+                                <div class="noti-scroll" data-simplebar>
+    
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item border-bottom">
+                                        <div class="notify-icon bg-primary"><i class="uil uil-user-plus"></i></div>
+                                        <p class="notify-details">Yeni Kayıt.<small class="text-muted">5 saat önce</small>
+                                        </p>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item border-bottom">
+                                        <div class="notify-icon bg-primary"><i class="uil uil-user"></i></div>
+                                        <p class="notify-details">Yeni Bildirim</p>
+                                        <p class="text-muted mb-0 user-msg">
+                                            <small>8 saat önce</small>
+                                        </p>
+                                    </a>
+
+                            
+
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item border-bottom active">
+                                        <div class="notify-icon bg-success"><i class="uil uil-comment-message"></i> </div>
+                                        <p class="notify-details">
+                                            Yeni Bildirim<small class="text-muted">12 saat önce</small>
+                                        </p>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item border-bottom">
+                                        <div class="notify-icon bg-danger"><i class="uil uil-comment-message"></i></div>
+                                        <p class="notify-details">
+                                            Yeni Bildirim<small class="text-muted">17 saat önce</small>
+                                        </p>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-primary">
+                                            <i class="uil uil-heart"></i>
+                                        </div>
+                                        <p class="notify-details">
+                                            Yeni Bildirim<small class="text-muted">22 saat önce</small>
+                                        </p>
+                                    </a>
+                                </div>
+    
+                                <!-- All-->
+                                <a href="javascript:void(0);" class="dropdown-item text-center text-primary notify-item notify-all">
+                                    Hepsini Gör <i class="fe-arrow-right"></i>
+                                </a>
+    
+                            </div>
+                        </li>
+    
+                        <li class="dropdown notification-list topbar-dropdown">
+                            <a class="nav-link dropdown-toggle nav-user me-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                <i class="uil uil-user"></i>
+                                <span class="pro-user-name ms-1">
+                                    Admin <i class="uil uil-angle-down"></i> 
+                                </span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end profile-dropdown ">
+                                <!-- item-->
+                                <div class="dropdown-header noti-title">
+                                    <h6 class="text-overflow m-0">Hoşgeldiniz !</h6>
+                                </div>
+    
+                                <a href="#" class="dropdown-item notify-item">
+                                    <i data-feather="user" class="icon-dual icon-xs me-1"></i><span>Hesabım</span>
+                                </a>
+
+
+                                <div class="dropdown-divider"></div>
+
+                                <a href="#" class="dropdown-item notify-item">
+                                    <i data-feather="log-out" class="icon-dual icon-xs me-1"></i><span>Çıkış</span>
+                                </a>
+    
+                            </div>
+                        </li>
+    
+
+    
+                    </ul>
+    
+                    <!-- LOGO -->
+                    <div class="logo-box">
+                        <a href="" class="logo logo-dark">
+                            <span class="logo-sm">
+                                <img src="assets/images/std-logo-sm.png" alt="" height="44">
+
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/std-logo.png" alt="" height="54">
+
+                            </span>
+                        </a>
+    
+
+                    </div>
+    
+                    <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+                        <li>
+                            <button class="button-menu-mobile">
+                                <i data-feather="menu"></i>
+                            </button>
+                        </li>
+
+                        <li>
+                            <!-- Mobile menu toggle (Horizontal Layout)-->
+                            <a class="navbar-toggle nav-link" data-bs-toggle="collapse" data-bs-target="#topnav-menu-content">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                            <!-- End mobile menu toggle-->
+                        </li>   
+            
+
+
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <!-- end Topbar -->
+
+            <div class="topnav">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-light navbar-expand-lg topnav-menu">
+
+                        <div class="collapse navbar-collapse" id="topnav-menu-content">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle arrow-none" href="index.html" id="topnav-layout"  aria-haspopup="true" aria-expanded="false">
+                                        Dashboard
+                                    </a>
+
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-apps" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i data-feather="layers"></i> Sistem <div class="arrow-down"></div>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="topnav-apps">
+
+                                        <a href="#" class="dropdown-item">Mail İşlemleri</a>
+                                        <a href="#" class="dropdown-item">Yetki İşlemleri</a>
+                                        <a href="#" class="dropdown-item">Şifre İşlemleri</a>
+                                        <a href="#" class="dropdown-item">Sistem Parametreleri</a>
+
+                                    </div>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-components" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i data-feather="briefcase"></i> Satış <div class="arrow-down"></div>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="topnav-components">
+                                        <a href="#" class="dropdown-item">Teklif Giriş</a>
+                                        <a href="#" class="dropdown-item">TSBF Güncelleme</a>
+                                        <a href="#" class="dropdown-item">Kategori Giriş</a>
+                                        <a href="#" class="dropdown-item">Cari Kart İşlemleri</a>
+
+                                    </div>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-pages" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i data-feather="file-text"></i> Satın Alma <div class="arrow-down"></div>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="topnav-pages">
+                                        <a href="#" class="dropdown-item">Satınalma Talepleri</a>
+                                        <a href="#" class="dropdown-item">Satınalma Siparişleri</a>
+                                        <a href="#" class="dropdown-item">Mal Kabul ve İrsaliye Giriş</a>
+
+                                    </div>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-pages" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i data-feather="file-text"></i> Üretim <div class="arrow-down"></div>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="topnav-pages">
+                                        <a href="#" class="dropdown-item">Üretim İş Emri Giriş</a>
+                                        <a href="#" class="dropdown-item">İş Emri Tamamlama</a>
+
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-pages" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i data-feather="file-text"></i> Depo <div class="arrow-down"></div>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="topnav-pages">
+                                        <a href="#" class="dropdown-item">Depolar Arası Transfer</a>
+                                        <a href="#" class="dropdown-item">Sarf İşlemleri</a>
+                                        <a href="#" class="dropdown-item">Barkod İşlemleri</a>
+                                        <a href="#" class="dropdown-item">Stok İşlemleri</a>
+
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-pages" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i data-feather="file-text"></i> Lazım Olabilecek Şeyler <div class="arrow-down"></div>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="topnav-pages">
+                                        <a href="grafikler.html" class="dropdown-item">Grafikler</a>
+                                        <a href="icons-bootstrap.html" class="dropdown-item">Bootstrap İkonları</a>
+                                        <a href="icons-unicons.html" class="dropdown-item">Unicons İkonları</a>
+                                        <a href="icons-feather.html" class="dropdown-item">Feather İkonları</a>
+                                        <a href="bos-sayfa.html" class="dropdown-item">Boş Sayfa</a>
+                                        <a href="ui-kiti.html" class="dropdown-item">UI Kiti</a>
+                                        <a href="kartlar.html" class="dropdown-item">Kartlar</a>
+
+                                    </div>
+                                </li>
+
+                            </ul> <!-- end navbar-->
+                        </div> <!-- end .collapsed-->
+                    </nav>
+                </div> <!-- end container-fluid -->
+            </div> <!-- end topnav-->
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <div class="content">
+
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+                        
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box">
+                                    <h4 class="page-title">Hoşgeldiniz</h4>
+                                    <div class="page-title-right">
+                                        <ol class="breadcrumb m-0">
+
+                                            <li class="breadcrumb-item active">Dashboard</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>     
+                        <!-- end page title -->  
+
+                        <div class="row">
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-grow-1">
+                                                <span class="text-muted text-uppercase fs-12 fw-bold"> 24/09/2022 </span>
+                                                <h3 class="mb-0">USD</h3>
+                                                <h3 class="mb-0">18,2987 ₺</h3>
+                                            </div>
+                                            <div class="align-self-center flex-shrink-0">
+                                                <div id="today-revenue-chart" class="apex-charts"></div>
+                                                <span class="text-success fw-bold fs-13">
+                                                    <i class='uil uil-arrow-up'></i> 1.21%
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-grow-1">
+                                                <span class="text-muted text-uppercase fs-12 fw-bold">24/09/2022</span>
+                                                <h3 class="mb-0">EUR</h3>
+                                                <h3 class="mb-0">18,2599₺</h3>
+                                            </div>
+                                            <div class="align-self-center flex-shrink-0">
+                                                <div id="today-product-sold-chart" class="apex-charts">
+                                                </div>
+                                                <span class="text-danger fw-bold fs-13">
+                                                    <i class='uil uil-arrow-down'></i> 5.05%
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-grow-1">
+                                                <span class="text-muted text-uppercase fs-12 fw-bold">24/09/2022</span>
+                                                <h3 class="mb-0">GBP</h3>
+                                                <h3 class="mb-0">20,8486₺</h3>
+                                            </div>
+                                            <div class="align-self-center flex-shrink-0">
+                                                <div id="today-new-customer-chart" class="apex-charts">
+                                                </div>
+                                                <span class="text-success fw-bold fs-13">
+                                                    <i class='uil uil-arrow-up'></i> 25.16%
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+
+                        </div>
+                        <!-- 2. kısım-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="row align-items-center">
+                            <div class="col-md-4 col-xl-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-grow-1">
+                                                <span class="text-muted text-uppercase fs-12 fw-bold"> 24/09/2022 </span>
+                                                <h3 class="mb-0">Alüminyum (al)</h3>
+                                                <h3 class="mb-0">2232,00 $</h3>
+                                            </div>
+                                            <div class="align-self-center flex-shrink-0">
+                                                <div id="today-revenue-chart" class="apex-charts"></div>
+                                                <span class="text-success fw-bold fs-13">
+                                                    <i class='uil uil-arrow-up'></i> 1.21%
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-md-4 col-xl-2">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-grow-1">
+                                                <span class="text-muted text-uppercase fs-12 fw-bold">24/09/2022</span>
+                                                <h3 class="mb-0">Bakır (cu)</h3>
+                                                <h3 class="mb-0">7772,00 $</h3>
+                                            </div>
+                                            <div class="align-self-center flex-shrink-0">
+                                                <div id="today-product-sold-chart" class="apex-charts">
+                                                </div>
+                                                <span class="text-danger fw-bold fs-13">
+                                                    <i class='uil uil-arrow-down'></i> 5.05%
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-md-4 col-xl-2">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-grow-1">
+                                                <span class="text-muted text-uppercase fs-12 fw-bold">24/09/2022</span>
+                                                <h3 class="mb-0">Çinko (zn)</h3>
+                                                <h3 class="mb-0">3145,00 $</h3>
+                                            </div>
+                                            <div class="align-self-center flex-shrink-0">
+                                                <div id="today-new-customer-chart" class="apex-charts">
+                                                </div>
+                                                <span class="text-success fw-bold fs-13">
+                                                    <i class='uil uil-arrow-up'></i> 25.16%
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xl-2">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-grow-1">
+                                                <span class="text-muted text-uppercase fs-12 fw-bold">24/09/2022</span>
+                                                <h3 class="mb-0">Kurşun (pb)</h3>
+                                                <h3 class="mb-0">1882,00₺</h3>
+                                            </div>
+                                            <div class="align-self-center flex-shrink-0">
+                                                <div id="today-new-customer-chart" class="apex-charts">
+                                                </div>
+                                                <span class="text-success fw-bold fs-13">
+                                                    <i class='uil uil-arrow-up'></i> 25.16%
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xl-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-grow-1">
+                                                <span class="text-muted text-uppercase fs-12 fw-bold">24/09/2022</span>
+                                                <h3 class="mb-0">Nikel (ni)</h3>
+                                                <h3 class="mb-0">24610,00 $</h3>
+                                            </div>
+                                            <div class="align-self-center flex-shrink-0">
+                                                <div id="today-new-customer-chart" class="apex-charts">
+                                                </div>
+                                                <span class="text-success fw-bold fs-13">
+                                                    <i class='uil uil-arrow-up'></i> 25.16%
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- 2. kısım-->
+
+                        <!-- stats + charts -->
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-body">
+  
+                                        <h5 class="card-title mt-0 mb-0 header-title">Müşteri / Ay Bazlı Teklifler (Adet)</h5>
+                                        <div id="sales-by-category-chart" class="apex-charts mb-0 mt-4" dir="ltr"></div>
+                                    </div> <!-- end card-body-->
+                                </div> <!-- end card-->
+                            </div>
+
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <ul class="nav card-nav float-end">
+                                            <li class="nav-item">
+                                                <a class="nav-link text-muted" href="#">Bugün</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link text-muted" href="#">7 gün</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="#">15 gün</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link text-muted" href="#">1 ay</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link text-muted" href="#">1 yıl</a>
+                                            </li>
+                                        </ul>
+                                        <h5 class="card-title mb-0 header-title">Gün Farkı</h5>
+
+                                        <div id="revenue-chart" class="apex-charts mt-3"  dir="ltr"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- row -->
+                
+                        <!-- products -->
+                        <div class="row">
+
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <a href="" class="btn btn-primary btn-sm float-end">
+                                            <i class='uil uil-export me-1'></i> Dışa Aktar
+                                        </a>
+                                        <h5 class="card-title mt-0 mb-0 header-title">Teklifler</h5>
+
+                                        <div class="table-responsive mt-4">
+                                            <table class="table table-hover table-nowrap mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">Teklif No</th>
+                                                        <th scope="col">Müşteri Adı</th>
+                                                        <th scope="col">Teklif Talep Tarihi</th>
+                                                        <th scope="col">Teklif Onay Tarihi</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>TKF2022095562</td>
+                                                        <td>Proinsener</td>
+                                                        <td>2022/09/19</td>
+                                                        <td><span class="badge badge-soft-warning py-1">Bekliyor</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>TKF2022095562</td>
+                                                        <td>Proinsener</td>
+                                                        <td>2022/09/19</td>
+                                                        <td><span class="badge badge-soft-warning py-1">Bekliyor</span></td>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>TKF2022095562</td>
+                                                        <td>Proinsener</td>
+                                                        <td>2022/09/19</td>
+                                                        <td><span class="badge badge-soft-warning py-1">Bekliyor</span></td>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>TKF2022095562</td>
+                                                        <td>ISO SIGMA</td>
+                                                        <td>2022/09/14</td>
+                                                        <td><span class="badge badge-soft-warning py-1">Bekliyor</span></td>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>TKF2022095562</td>
+                                                        <td>ISO SIGMA</td>
+                                                        <td>2022/09/12</td>
+                                                        <td><span class="badge badge-soft-danger py-1">Reddedildi</span></td>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>6</td>
+                                                        <td>TKF2022095562</td>
+                                                        <td>UAB AUTOMATIKOS SISTEMOS</td>
+                                                        <td>2022/09/07</td>
+                                                        <td><span class="badge badge-soft-warning py-1">Bekliyor</span></td>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>7</td>
+                                                        <td>TKF2022095562</td>
+                                                        <td>INDASA ALMERIA S L</td>
+                                                        <td>2022/09/05</td>
+                                                        <td><span class="badge badge-soft-warning py-1">Bekliyor</span></td>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>8</td>
+                                                        <td>TKF2022095562</td>
+                                                        <td>DBT ENERGIE</td>
+                                                        <td>2022/08/25</td>
+                                                        <td><span class="badge badge-soft-success py-1">Onaylandı - 2022/08/26</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>9</td>
+                                                        <td>TKF2022095562</td>
+                                                        <td>AMPER ELEKTRİK SAN. VE TİC. LTD.ŞTİ.</td>
+                                                        <td>2022/08/24</td>
+                                                        <td><span class="badge badge-soft-warning py-1">Bekliyor</span></td>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>10</td>
+                                                        <td>TKF2022095562</td>
+                                                        <td>AMPLİFİ ELECTRİCALS</td>
+                                                        <td>2022/08/24</td>
+                                                        <td><span class="badge badge-soft-warning py-1">Bekliyor</span></td>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div> <!-- end table-responsive-->
+                                    </div> <!-- end card-body-->
+                                </div> <!-- end card-->
+                            </div> <!-- end col-->
+                        </div>
+                        <!-- end row -->
+
+
+                        <!-- end row -->
+                        
+                    </div> <!-- container -->
+
+                </div> <!-- content -->
+
+                <!-- Footer Start -->
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <script>document.write(new Date().getFullYear())</script> &copy; Std Transformatör <a href="">Kaan Toprak</a> 
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-md-end footer-links d-none d-sm-block">
+                                    <a href="javascript:void(0);">Hakkımızda</a>
+                                    <a href="javascript:void(0);">Yardım</a>
+                                    <a href="javascript:void(0);">İletişim</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- end Footer -->
+
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+
+
+        </div>
+        <!-- END wrapper -->
+
+
+
+        <!-- Right bar overlay-->
+      
+
+        <!-- Vendor js -->
+        <script src="assets/js/vendor.min.js"></script>
+
+        <!-- optional plugins -->
+        <script src="assets/libs/moment/min/moment.min.js"></script>
+        <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+        <script src="assets/libs/flatpickr/flatpickr.min.js"></script>
+
+        <!-- page js -->
+        <script src="assets/js/pages/dashboard.init.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.min.js"></script>
+        
+    </body>
+</html>
